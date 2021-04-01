@@ -179,7 +179,7 @@
         }
       });
 
-      $(document).bind('page:before-change', function() {
+      $(document).bind('turbolinks:before-visit', function() {
         if(openConfirmation()) {
           return confirm(settings.message);
         }
